@@ -20,7 +20,7 @@ class NetworkDataSource @Inject constructor(
         callbackFlow {
             trySend(
                 Resource.Success(
-                    webService.getMovieByImdbID(imdbID, "") //TODO: add apikey
+                    webService.getMovieByImdbID(imdbID, "fd1254ed") //TODO: add apikey
                 )
             )
             awaitClose { close() }
